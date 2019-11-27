@@ -1,6 +1,6 @@
 
 
-
+// testing
 var deck = document.querySelectorAll(".card");
 var start=document.getElementById("startImg").addEventListener("click",shuffle);
 let InitialFlip = false;
