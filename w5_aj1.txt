@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="memoryGame.css" />
+  <title>Memory Game</title>
+</head>
+<body>
+<div class="container-fluid">
+ <label>Choose an owner
+ <input type="text" name="owner" id="owner" value="" class="form-control">
+ </label>
+ <br/>
+ <label>Choose a username
+ <input type="text" name="username" id="username" value="" class="form-control">
+ </label>
+ <br/>
+ <div class="msg"></div>
+ <button id="createUserSubmit" type="submit" class="btn btn-default" >Create a User</button>
+ <button id="getUserSubmit" type="submit" class="btn btn-default" >Get the user list</button>
+</div>
