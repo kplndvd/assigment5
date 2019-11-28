@@ -9,21 +9,23 @@ let blocking = false;
 var pairCounter=0;
 var missCounter=0;
 
-var start = document.getElementById("startImg").addEventListener
-  ("click", function () {
+var backgroundMusic = document.getElementById("bgMusic");
+
+var start = document.getElementById("startImg").addEventListener ("click",startGame); 
+
+   function startGame(){
     for(i=0; i<12;i++){
       deck[i].classList.remove("flip");
       deck[i].addEventListener("click", flip);
     }
-    setTimeout(() => {shuffle(),100});
+    
+    setTimeout(() => {shuffle()},900);
     pairCounter=0;
     document.getElementById("totalMatches").innerHTML="Matches Score:" + pairCounter; 
     missCounter=0;
     document.getElementById("totalMisses").innerHTML="Misses: " + missCounter;
-  });
-
-
-
+    backgroundMusic.play();
+  };
 
 function shuffle() {
   deck.forEach(card => {
@@ -60,7 +62,7 @@ function checkMatch(firstPick, secondPick) {
 
     firstPick.removeEventListener("click", flip);
     secondPick.removeEventListener("click", flip);
-    if (pairCounter === 6) { setTimeout(() => { confirm("You won the game!! If you wish to play another click on start game sign"); }, 900); }
+    if (pairCounter === 1) { setTimeout(() => { document.getElementById("id01").style.display="block";}, 700); }
     reset();
   } else {
 
@@ -73,7 +75,7 @@ function checkMatch(firstPick, secondPick) {
       document.getElementById("totalMisses").innerHTML="Misses: " + missCounter;
       blocking = false;
       reset();
-    }, 967)
+    }, 890)
   }
 }
 

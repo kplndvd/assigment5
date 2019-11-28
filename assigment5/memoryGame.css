@@ -20,7 +20,8 @@
 
   
   .boardGame {
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     height: 540px;
     margin: auto;
     display: flex;
@@ -95,7 +96,7 @@
     font-family: sans-serif;
     font-style: oblique;
     font-size: x-large;
-    height: 65px;
+    height: 72px;
     width: 110px;
     margin-top: 5px;
     margin-left: 5px;
@@ -103,3 +104,26 @@
     border-radius: 5px;
   }
   
+
+  #modalOverride{
+    height: 100px;
+    width: 100px ;
+  }
+
+  .w3-modal-content
+  {margin:auto;background-color:rgba(219, 150, 20, 0.959) !important;position:center !important;padding:0;outline:0;  width:340px !important}
+
+  .modalBtns{
+    font-family: sans-serif;
+    color: black blue;
+    background-color: chartreuse;
+    height: 48px;
+    width: 151px;
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 355px) {
+    #startImg{ 
+      margin-left: 62px;
+    }
+  }
