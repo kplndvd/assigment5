@@ -78,7 +78,7 @@
   }
 
   #startImg:active {
-    transform: scale(0.97);
+    transform: scale(0.90);
     transition: transform .2s;
   }
 #score{
