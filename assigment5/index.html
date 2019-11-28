@@ -1,0 +1,57 @@
+<!DOCfruit html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="memoryGame.css" />
+        <title>Memory Game</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="startWrap">
+                <img src="./images/start.png" id="startImg">
+                <img src="./images/fn.png" >
+            </div>
+
+            <section class="boardGame">
+
+                <div class="card" data-fruit="apple"><img src="cardcover.png" class="back"><img src="./images/apple.svg"
+                        class="front"></div>
+                <div class="card" data-fruit="apple"><img src="cardcover.png" class="back"><img src="./images/apple.svg"
+                        class="front"></div>
+                <div class="card" data-fruit="lemon"><img src="cardcover.png" class="back"><img src="./images/lemon.svg"
+                        class="front"></div>
+                <div class="card" data-fruit="lemon"><img src="cardcover.png" class="back"><img src="./images/lemon.svg"
+                        class="front"></div>
+                <div class="card" data-fruit="cherry"><img src="cardcover.png" class="back"><img
+                        src="./images/cherry.svg" class="front"></div>
+                <div class="card" data-fruit="cherry"><img src="cardcover.png" class="back"><img
+                        src="./images/cherry.svg" class="front"></div>
+                <div class="card" data-fruit="kiwi"><img src="cardcover.png" class="back"><img src="./images/kiwi.svg"
+                        class="front"></div>
+                <div class="card" data-fruit="kiwi"><img src="cardcover.png" class="back"><img src="./images/kiwi.svg"
+                        class="front"></div>
+                <div class="card" data-fruit="watermelon"><img src="cardcover.png" class="back"><img
+                        src="./images/watermelon.svg" class="front"></div>
+                <div class="card" data-fruit="watermelon"><img src="cardcover.png" class="back"><img
+                        src="./images/watermelon.svg" class="front"></div>
+                <div class="card" data-fruit="strawberry"><img src="cardcover.png" class="back"><img
+                        src="./images/strawberry.svg" class="front"></div>
+                <div class="card" data-fruit="strawberry"><img src="cardcover.png" class="back"><img
+                        src="./images/strawberry.svg" class="front"></div>
+
+            </section>
+            <div id="score">
+                <div id="totalMatches"> </div>
+                <div id="totalMisses"> </div>
+            </div>
+        </div>
+
+        <script src="main.js">
+        </script>
+    </body>
+
+    </html>
